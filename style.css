@@ -1,0 +1,397 @@
+html {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+  background-color: hsl(171, 66%, 44%);
+  background-color: hsl(233, 100%, 69%);
+  background-color: hsl(210, 10%, 33%);
+  background-color: hsl(201, 11%, 66%);
+} */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 68vh;
+  font-size: 18px;
+  padding-top: 50px;
+  color: hsl(201, 11%, 66%);
+  margin-bottom: 185px;
+  padding: 0 35px;
+}
+
+.first {
+  background: url(images/bg-header-desktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first img {
+  width: 113px;
+  margin-top: 81px;
+  margin-bottom: 30px;
+}
+
+section h1 {
+  font-size: 39px;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section p {
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 35px;
+  max-width: 695px;
+  align-items: center;
+}
+
+section button {
+  background-color: hsl(171, 66%, 44%);
+  border: 0;
+  width: 215px;
+  height: 45px;
+  border-radius: 1in;
+  color: white;
+  font-size: 18px;
+  transition: opacity 0.5s linear;
+  box-shadow: 0px 1px 5px 0px hsl(171, 66%, 44%);
+  margin-bottom: 5px;
+}
+
+section button:last-of-type {
+  background-color: hsl(233, 100%, 69%);
+  margin-left: 10px;
+  box-shadow: none;
+  box-shadow: 0px 1px 5px 0px hsl(180, 1%, 27%);
+}
+
+section button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.two {
+  margin-bottom: 0;
+}
+
+.two div:first-of-type {
+  display: flex;
+  margin-top: 90px;
+}
+
+.two div:first-of-type div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 115px;
+  width: 330px;
+  translate: 136% 0;
+}
+
+.two div:first-of-type div h2 {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 15px;
+}
+
+.two div:first-of-type div p {
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 60px;
+}
+
+.two div img {
+  width: 800px;
+  position: absolute;
+  left: -34px;
+}
+
+.three {
+  margin-top: 240px;
+}
+
+.four {
+  margin: 0;
+}
+.four > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: calc(100% - 190px);
+  margin-top: 45px;
+}
+
+.four div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.four div div:not(:first-of-type) {
+  margin-left: 50px;
+}
+
+.four h2 {
+  color: hsl(210, 10%, 33%);
+  padding: 40px 0 20px 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+.four div p {
+  max-width: 390px;
+}
+
+.five {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 0;
+  padding: 180px 55px;
+  margin-bottom: 0;
+}
+
+.six {
+  margin-bottom: 0;
+}
+
+section:last-of-type {
+  min-height: 55vh;
+}
+
+.six div {
+  margin-top: 10px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer {
+  background-color: #f5f6f8;
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 120px;
+}
+
+footer ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px 95px;
+  color: hsl(201, 11%, 66%);
+}
+
+.f {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.c {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.p {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.pre {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.in {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+footer ul li {
+  cursor: pointer;
+  transition: all 0.5s linear;
+  font-weight: 700;
+}
+
+footer ul li:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+footer > img {
+  width: 45px;
+  margin: 0px 150px 0 180px;
+}
+
+footer div {
+  position: absolute;
+  right: 90px;
+}
+
+footer div i {
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  font-size: 23px;
+  color: hsl(210, 10%, 33%);
+}
+
+footer div i:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+@media (max-width: 1300px) {
+  .two div:first-of-type div {
+    translate: 100% 0;
+  }
+  .two div img {
+    width: 690px;
+  }
+}
+
+@media (max-width: 1143px) {
+  footer ul {
+    gap: 15px 45px;
+  }
+}
+
+@media (max-width: 1060px) {
+  footer ul {
+    gap: 10px 20px;
+    font-size: 15px;
+  }
+  .two div:first-of-type div h2 {
+    font-size: 20px;
+  }
+  .two div:first-of-type div p {
+    font-size: 13px;
+  }
+  .two div img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .two div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .two div img {
+    position: unset;
+    width: 80%;
+  }
+
+  .two div:first-of-type div {
+    translate: 0;
+    width: calc(100% - 40px);
+  }
+  .two div:first-of-type div h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .two div:first-of-type div p {
+    font-size: 17px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 950px) {
+  section {
+    margin-bottom: 100px;
+  }
+
+  .first {
+    min-height: 77vh;
+  }
+  section h1 {
+    font-size: 25px;
+  }
+
+  section p {
+    font-size: 15px;
+  }
+
+  .first div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .three img {
+    width: 80%;
+  }
+
+  .four h2 {
+    font-size: 20px;
+  }
+
+  .four p {
+    font-size: 13px;
+  }
+
+  .four > div {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  .four div div:not(:first-of-type) {
+    margin: 0;
+  }
+  .five {
+    flex-direction: column;
+  }
+
+  .five img {
+    margin-bottom: 75px;
+  }
+
+  .six div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  section button:last-of-type {
+    margin: 0;
+  }
+  section button {
+    width: 355px;
+    height: 50px;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer > img {
+    margin: 80px 0 26px 0;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer ul li {
+    margin: 10px 0;
+  }
+  footer div {
+    position: unset;
+    margin: 0;
+  }
+  footer div i {
+    margin: 40px 0;
+  }
+
+  footer div i:not(:first-of-type) {
+    margin-left: 33px;
+  }
+}
+
+@media (max-width: 375px) {
+  section button {
+    width: 300px;
+  }
+}
